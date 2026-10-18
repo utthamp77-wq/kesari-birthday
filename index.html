@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f6">
+<title>For KESARI~ ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+:root{
+  --pink:#ff78aa;--hot:#ed4e91;--rose:#c83c78;--blush:#ffe0ec;
+  --pale:#fff5f9;--ink:#54233c;--muted:#986a81;--white:#fffafd;
+  --line:#f5c4d8;--shadow:0 22px 70px #d95b8a1c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:30px}
+body{margin:0;color:var(--ink);font-family:'DM Sans',sans-serif;background:
+  radial-gradient(ellipse at 10% 0%,#ffe0ed 0,transparent 38%),
+  radial-gradient(ellipse at 90% 35%,#ffeaf3 0,transparent 35%),#fff9fc;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid #e44d91;outline-offset:4px}
+a{color:inherit;text-decoration:none}
+nav{position:absolute;z-index:5;top:0;left:0;width:100%;padding:23px 7%;display:flex;justify-content:space-between;align-items:center}
+.brand{font-size:11px;letter-spacing:3px;font-weight:700;color:#a64b76}
+.navtag{font-size:12px;color:#b47a96}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 22px 78px;position:relative;isolation:isolate}
+.hero:before{content:"";position:absolute;z-index:-1;width:min(78vw,600px);aspect-ratio:1;border-radius:50%;background:#ffd7e7;filter:blur(4px);opacity:.65}
+.hero:after{content:"";position:absolute;z-index:-1;width:min(58vw,430px);aspect-ratio:1;border:1px solid #f6b8d2;border-radius:50%;box-shadow:0 0 0 24px #fff7fa,0 0 0 25px #f8c8dc,0 0 70px #f8a9c9;animation:halo 8s linear infinite}
+@keyframes halo{to{transform:rotate(360deg)}}
+.eyebrow,.kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#d34e8b;font-weight:700}
+h1{font:400 clamp(68px,13vw,142px)/.98 'Great Vibes',cursive;color:#bd3f78;margin:25px 0 18px;text-shadow:0 8px 35px #ef8ab644}
+.hero p{max-width:490px;color:#87556f;font-size:14px;line-height:1.95}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+.btn{border-radius:50px;padding:14px 22px;border:1px solid #e96a9d;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 25px #df61902a}
+.primary{background:linear-gradient(135deg,#ff9dc2,#ed5d99);color:white;font-weight:700;box-shadow:0 8px 25px #e75d962c}
+.secondary{background:#ffffffb8;color:#ad4276;border-color:#f0bad0}
+.scroll{position:absolute;bottom:26px;font-size:10px;letter-spacing:3px;color:#bd7a9a}
+.float{position:fixed;top:-35px;z-index:10;pointer-events:none;animation:fall linear forwards;filter:drop-shadow(0 2px 5px #e65d9122)}
+@keyframes fall{to{transform:translateY(110vh) rotate(420deg);opacity:0}}
+section{padding:88px 7%;position:relative}
+.wrap{max-width:1000px;margin:auto}
+.head{text-align:center;max-width:650px;margin:0 auto 38px}
+h2{font:400 clamp(34px,6vw,57px)/1.15 'Playfair Display',serif;margin:13px 0;color:#773251}
+.head p,.muted{font-size:14px;line-height:1.9;color:var(--muted)}
+.countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px 0}
+.timebox{min-width:75px;padding:15px 12px;background:#ffffffbb;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.timebox strong{display:block;font:28px 'Playfair Display',serif;color:#c43e7a}
+.timebox span{display:block;font-size:9px;letter-spacing:2px;color:#a66a86;margin-top:5px}
+.pill{display:inline-block;background:#ffe3ef;color:#bd427a;border-radius:30px;padding:9px 14px;font-size:11px;letter-spacing:1px}
+.letter{max-width:760px;margin:auto;padding:clamp(26px,6vw,58px);border:1px solid #f2bfd4;border-radius:22px;background:linear-gradient(145deg,#fff,#fff3f8);box-shadow:var(--shadow);position:relative}
+.letter:after{content:"♡";position:absolute;right:23px;top:17px;font-size:26px;color:#f08bb4}
+.script{font:36px 'Great Vibes',cursive;color:#d14f8a}
+.letter p{font-size:14px;line-height:2.05;color:#80516b}
+.signature{text-align:right;font:34px 'Great Vibes',cursive;color:#d14f8a;margin-top:24px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:25px 23px;min-height:200px;border:1px solid #f4c5d8;border-radius:18px;background:#ffffffb8;box-shadow:0 12px 35px #d95b8a0c;transition:.3s}
+.card:hover{transform:translateY(-6px) rotate(-.4deg);box-shadow:var(--shadow)}
+.card .emoji{font-size:25px}.card h3{font:23px 'Playfair Display',serif;margin:16px 0 8px}.card p{font-size:12px;line-height:1.9;color:#956a81;margin:0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.photo{position:relative;aspect-ratio:4/5;border:1px dashed #e7a1bf;border-radius:16px;background:linear-gradient(150deg,#ffe5ef,#fff7fb);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;color:#bd7194;font-size:12px;line-height:1.8;padding:14px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo span{position:relative;z-index:1;background:#fff8fbe0;padding:10px;border-radius:10px}
+.photo input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;z-index:2}
+.photo:focus-within{outline:3px solid var(--pink)}
+.gallery-note{text-align:center;color:#b27b97;font-size:11px;margin-top:15px}
+.reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:800px;margin:auto}
+.reason{padding:19px 20px;border:1px solid #f4c8da;background:#ffffffa8;border-radius:14px;font-size:13px;line-height:1.8;color:#87556f}
+.reason b{display:block;color:#c64a82;margin-bottom:4px}
+.surprise{text-align:center}
+.gift{border:0;background:transparent;font-size:80px;filter:drop-shadow(0 8px 18px #e66b9b33);animation:bob 2.3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px) rotate(4deg)}}
+.secret{display:none;max-width:670px;margin:25px auto 0;padding:30px;border:1px solid #f0b3cd;border-radius:20px;background:linear-gradient(145deg,#fff,#ffedf5);box-shadow:var(--shadow);animation:reveal .6s ease}
+.secret.show{display:block}
+.secret p{font-size:14px;line-height:2;color:#80516b}
+@keyframes reveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.final-note{text-align:center;padding:70px 20px 42px;background:#fff0f6;border-top:1px solid #f5d0df}
+.final-note .big{font:45px 'Great Vibes',cursive;color:#c44680}
+.final-note p{font-size:10px;letter-spacing:2px;color:#ae7b95;line-height:2}
+.top{position:fixed;bottom:18px;right:18px;z-index:8;background:#fffafc;color:#bb477e;border:1px solid #f0b5ce;border-radius:50%;width:43px;height:43px;box-shadow:var(--shadow)}
+.sparkle{display:inline-block;animation:twinkle 2.5s infinite ease-in-out}
+@keyframes twinkle{50%{transform:scale(1.25) rotate(15deg);opacity:.65}}
+@media(max-width:700px){nav{padding:18px 20px}.navtag{font-size:10px}section{padding:68px 20px}.cards{grid-template-columns:1fr}.card{min-height:auto}.gallery{grid-template-columns:1fr 1fr}.reasons{grid-template-columns:1fr}.timebox{min-width:65px}.timebox strong{font-size:24px}.hero:after{width:65vw}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="brand">A LITTLE WORLD FOR KESARI~ ♡</div>
+  <div class="navtag">made with love, just for you</div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow"><span class="sparkle">✧</span> a whole day to celebrate you <span class="sparkle">✧</span></div>
+  <h1>Happy Birthday,<br>KESARI~</h1>
+  <p>For the girl who deserves the softest days, the biggest smiles, and a little reminder that she is truly special. Today, this tiny corner of the universe is all yours. ♡</p>
+  <div class="actions">
+    <button class="btn primary" onclick="goTo('letter')">Open your little universe ♡</button>
+    <button class="btn secondary" onclick="goTo('surprise')">There's a surprise ✧</button>
+  </div>
+  <div class="scroll">A LITTLE MAGIC AWAITS ↓</div>
+</header>
+
+<main>
+<section id="count">
+  <div class="head">
+    <div class="kicker">A date worth celebrating</div>
+    <h2>Counting down to your day</h2>
+    <p>One more trip around the sun for my favorite girl. Let's make this birthday feel extra special. 🎀</p>
+    <div id="countLabel" class="pill">UNTIL 19 OCTOBER 2026</div>
+    <div class="countdown" aria-live="polite">
+      <div class="timebox"><strong id="days">--</strong><span>DAYS</span></div>
+      <div class="timebox"><strong id="hours">--</strong><span>HOURS</span></div>
+      <div class="timebox"><strong id="mins">--</strong><span>MINUTES</span></div>
+      <div class="timebox"><strong id="secs">--</strong><span>SECONDS</span></div>
+    </div>
+    <p id="birthdayStatus" class="muted">A little countdown for a very special person. ♡</p>
+  </div>
+</section>
+
+<section id="letter">
+  <div class="head">
+    <div class="kicker">01 — from my heart</div>
+    <h2>A letter for you</h2>
+    <p>Some feelings deserve more than a quick birthday message.</p>
+  </div>
+  <article class="letter">
+    <div class="script">To my lovely KESARI~,</div>
+    <p>Happy birthday, pretty girl. ♡</p>
+    <p>I wish I could fit every good thing I want for you into one little letter. I hope this new chapter brings you peace on the difficult days, laughter on the ordinary ones, and moments so beautiful you wish you could pause time.</p>
+    <p>I hope you keep chasing your dreams, discovering new things about yourself, and remembering that you never have to be perfect to be precious. Your feelings matter. Your hopes matter. And the person you are becoming deserves kindness, especially from yourself.</p>
+    <p>Thank you for being a part of my world. I hope we get to collect more silly moments, sweet conversations, unexpected laughs, and memories that we'll smile about long after they've happened.</p>
+    <p>Today is about celebrating <em>you</em> — your own little sparkle, your dreams, your quirks, and everything that makes you KESARI~. I hope you feel appreciated today, and on all the regular days after your birthday, too.</p>
+    <p>May this year be gentle with your heart and full of new reasons to smile. Keep being you, okay? The world is more interesting with you in it. ♡</p>
+    <div class="signature">With love, <span id="signName">your favorite person</span> ♡</div>
+  </article>
+</section>
+
+<section>
+  <div class="head">
+    <div class="kicker">02 — all the little things</div>
+    <h2>Reasons you're so special</h2>
+    <p>It's never just one thing. It's all the little things that make you, you.</p>
+  </div>
+  <div class="wrap cards">
+    <article class="card"><div class="emoji">🌷</div><h3>Your heart</h3><p>The care you show, the feelings you carry, and the small things you do can mean more than you realize.</p></article>
+    <article class="card"><div class="emoji">🦋</div><h3>Your own sparkle</h3><p>There is only one you. Never feel like you have to dim your personality to fit someone else's idea of who you should be.</p></article>
+    <article class="card"><div class="emoji">🎀</div><h3>Your little quirks</h3><p>The random, silly, wonderfully you things deserve to be celebrated too. Ordinary moments can become favorite memories.</p></article>
+  </div>
+</section>
+
+<section id="memories">
+  <div class="head">
+    <div class="kicker">03 — our scrapbook</div>
+    <h2>Little moments, kept forever</h2>
+    <p>Add your favorite pictures here to make this page feel like your own little scrapbook.</p>
+  </div>
+  <div class="wrap gallery">
+    <label class="photo"><input type="file" accept="image/*" aria-label="Choose first photo" onchange="loadPhoto(this)"><span>♡<br><b>Our favorite photo</b><br>Tap to add a picture</span></label>
+    <label class="photo"><input type="file" accept="image/*" aria-label="Choose second photo" onchange="loadPhoto(this)"><span>✧<br><b>A memory I love</b><br>Tap to add a picture</span></label>
+    <label class="photo"><input type="file" accept="image/*" aria-label="Choose third photo" onchange="loadPhoto(this)"><span>🌷<br><b>My favorite girl</b><br>Tap to add a picture</span></label>
+  </div>
+  <p class="gallery-note">Photo previews stay in this open page; choose the photos again after reloading.</p>
+</section>
+
+<section>
+  <div class="head">
+    <div class="kicker">04 — little reminders</div>
+    <h2>For the days you need to hear it</h2>
+  </div>
+  <div class="reasons">
+    <div class="reason"><b>♡ You matter.</b>Your thoughts, dreams, and feelings deserve to be heard.</div>
+    <div class="reason"><b>✧ Be proud of yourself.</b>Even the quiet steps forward count. Give yourself credit for trying.</div>
+    <div class="reason"><b>♡ You deserve kindness.</b>From the people around you, and from the voice inside your own head.</div>
+    <div class="reason"><b>✧ Keep dreaming.</b>Your story is still unfolding, and there are so many wonderful things left to discover.</div>
+    <div class="reason"><b>♡ You can be yourself.</b>You don't have to pretend to be someone else to deserve care and respect.</div>
+    <div class="reason"><b>✧ More memories await.</b>This is another chapter, with new places, new laughs, and new little moments ahead.</div>
+  </div>
+</section>
+
+<section id="surprise" class="surprise">
+  <div class="head">
+    <div class="kicker">05 — just for you</div>
+    <h2>One last little surprise...</h2>
+    <p>Okay, KESARI~. This part is just for you. Tap the gift. 🎁</p>
+  </div>
+  <button class="gift" onclick="revealGift()" aria-label="Open your birthday surprise">🎁</button>
+  <p class="muted">Psst... there's something inside.</p>
+  <div class="secret" id="secret" aria-live="polite">
+    <div class="script">A tiny wish for you ♡</div>
+    <p>If I could make one birthday wish for you, it would be that you feel appreciated, understood, and excited for the person you're becoming.</p>
+    <p>I hope you have people who make you laugh until your cheeks hurt, days that bring you peace, and dreams that make you excited to wake up and try again. I hope you always remember that you deserve respect, honesty, and the freedom to be yourself.</p>
+    <p>Whatever this new year brings, I hope it gives you stories worth telling and little moments worth keeping. Keep your sparkle, keep your dreams, and never forget to celebrate yourself, too.</p>
+    <h2 style="color:#d14f8a">Happy Birthday, KESARI~ ♡</h2>
+    <div class="script">You deserve a little magic.</div>
+  </div>
+</section>
+</main>
+
+<footer class="final-note">
+  <div class="big">Made with love, just for you ♡</div>
+  <p>ONE SPECIAL GIRL · A MILLION LITTLE REASONS TO CELEBRATE</p>
+  <p>HAPPY BIRTHDAY, KESARI~ 🎀</p>
+</footer>
+<button class="top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+// PERSONALIZE HERE: change this to the name/nickname she uses for you.
+const YOUR_NICKNAME = "your favorite person";
+document.getElementById("signName").textContent = YOUR_NICKNAME;
+
+// Countdown uses the visitor's local time zone.
+const birthdayDate = new Date(2026, 9, 19, 0, 0, 0);
+function updateCountdown(){
+  const now = new Date();
+  const diff = birthdayDate.getTime() - now.getTime();
+  const label = document.getElementById("countLabel");
+  const status = document.getElementById("birthdayStatus");
+  if(diff > 0){
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    document.getElementById("days").textContent = d;
+    document.getElementById("hours").textContent = h;
+    document.getElementById("mins").textContent = m;
+    document.getElementById("secs").textContent = s;
+    label.textContent = "UNTIL 19 OCTOBER 2026";
+    status.textContent = "The countdown is on. Your special day is getting closer. ♡";
+  }else{
+    ["days","hours","mins","secs"].forEach(id=>document.getElementById(id).textContent="♡");
+    label.textContent = "TODAY IS YOUR DAY";
+    status.textContent = "It's your birthday, KESARI~! Let the celebrating begin. 🎂";
+  }
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+function goTo(id){document.getElementById(id).scrollIntoView({behavior:"smooth"}); sprinkle(18);}
+function revealGift(){
+  const gift=document.getElementById("secret");
+  gift.classList.toggle("show");
+  if(gift.classList.contains("show")){sprinkle(35);setTimeout(()=>gift.scrollIntoView({behavior:"smooth",block:"center"}),100);}
+}
+function sprinkle(count){
+  const symbols=["♡","♥","✧","🎀","🌸","🦋"];
+  for(let i=0;i<count;i++){
+    setTimeout(()=>{
+      const el=document.createElement("span");
+      el.className="float";
+      el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+      el.style.left=Math.random()*100+"vw";
+      el.style.fontSize=(13+Math.random()*19)+"px";
+      el.style.animationDuration=(3.5+Math.random()*4)+"s";
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(),8000);
+    },i*55);
+  }
+}
+function loadPhoto(input){
+  const file=input.files && input.files[0];
+  if(!file)return;
+  if(!file.type.startsWith("image/"))return;
+  const label=input.closest(".photo");
+  let img=label.querySelector("img");
+  if(!img){img=document.createElement("img");label.appendChild(img);}
+  const reader=new FileReader();
+  reader.onload=()=>{img.src=reader.result;const span=label.querySelector("span");if(span)span.style.display="none";};
+  reader.readAsDataURL(file);
+}
+setInterval(()=>{if(Math.random()>.45)sprinkle(1);},1800);
+</script>
+</body>
+</html>
